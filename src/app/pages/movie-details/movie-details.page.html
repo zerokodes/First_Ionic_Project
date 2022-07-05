@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>{{movie?.title}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/movie"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-card>
+    <img [src]="imageBaseUrl + '/w400'+ movie?.poster_path" class="movie-img">
+   </ion-card>
+</ion-content>
